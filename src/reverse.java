@@ -1,21 +1,29 @@
-import java.util.Scanner;
-
 
 public class reverse {
     public static void main(String[] args) {
-        int n;
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter a number : ");
-        n=sc.nextInt();
+        int sayac = 0;
+        int a = 0;
+        for (int i = 2; i < 100; i++) {
+            sayac = i;
+            int b = 0;
+            for (int j = 2; j < sayac ; j++) {
 
-        for(int i=0; i<n; i++){
+                if (sayac%j == 0 ) {
+                    b=1;
+                    break;
+                }
 
-            for(int k=0; k<i; k++){
-                System.out.print(" ");
-            }for(int j=0; j<(2*n)-1-(2*i); j++){
-                System.out.print("*");
+                }
+            if (b == 0) {
+                System.out.print(sayac + " ");
             }
-            System.out.println("");
-        }
-    }
-}
+
+
+            }
+                }
+            }
+
+
+
+
+
